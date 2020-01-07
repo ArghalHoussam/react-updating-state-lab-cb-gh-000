@@ -20,14 +20,14 @@ class YouTubeDebugger extends React.Component {
     event.persist();
     this.setState( previousState => {
           previousState.settings.bitrate = 12;
-    });
+    }, () => console.log(this.state));
   }
 
   resolutionChangedHandler = (event) => {
     event.persist();
     this.setState( previousState => {
           previousState.settings.video.resolution = '720p';
-    });
+    }, () => console.log(this.state));
   }
 
   render() {
