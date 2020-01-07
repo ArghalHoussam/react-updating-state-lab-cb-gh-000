@@ -25,9 +25,9 @@ class YouTubeDebugger extends React.Component {
         } else if (target.className === 'resolution') {
           previousState.settings.video.resolution = '720p';
         }
-
-    }, () => console.log(this.state));
+    });
   }
+  
   render() {
     return (
       <div>
