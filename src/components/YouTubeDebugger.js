@@ -21,8 +21,11 @@ class YouTubeDebugger extends React.Component {
     let target = event.target;
     console.log(target.className);
     this.setState (prev => {
-      console.log(prev);
-      return {};
+      prev.settings.bitrate = 12;
+      return {}
+      };
+    }, () => {
+      console.log(this.state);
     });
     // this.setState( previousState => {
     //     if (target.className === 'bitrate') {
