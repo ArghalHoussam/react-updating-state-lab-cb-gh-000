@@ -19,9 +19,9 @@ class YouTubeDebugger extends React.Component {
   clickHandler = (event) => {
     event.persist();
     this.setState( previousState => {
-        if (target.className === 'bitrate') {
+        if (event.target.className === 'bitrate') {
             previousState.settings.bitrate = 12;
-        } else if (target.className === 'resolution') {
+        } else if (event.target.className === 'resolution') {
           previousState.settings.video.resolution = '720p';
         }
     });
